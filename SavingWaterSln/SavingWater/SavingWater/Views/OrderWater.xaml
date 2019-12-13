@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SavingWater.Views.OrderWater">
+
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Browse Items Below"
+                   FontSize="Large" FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <Image Source="item1.jpg"></Image>
+                <Label Text="1litre bottle of water"></Label>
+            <Label Text="Cost - R12,99"></Label>
+            <Button Text="Add to cart" Command="{Binding CheckOut}"></Button>
+            <Image Source="item4.jpg"></Image>
+            <Label Text="5litre bottle of water"></Label>
+            <Label Text="Cost - R18,95"></Label>
+            <Button Text="Add to cart" Command="{Binding CheckOut}"></Button>
+            <Image Source="images.jpg"></Image>
+            <Label Text="18.9litre bottle of water"></Label>
+            <Label Text="Cost - R45,95"></Label>
+            <Button Text="Add to cart" Command="{Binding CheckOut}"></Button>
+            <Image Source="images3.jpg"></Image>
+            <Label Text="20litre bottle of water+tap"></Label>
+            <Label Text="Cost - R94,95"></Label>
+            <Button Text="Add to cart" Command="{Binding CheckOut}"></Button>
+
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

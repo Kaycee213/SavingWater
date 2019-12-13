@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SavingWater.Views.SignUpCopy"
+             BackgroundImageSource="image14.jpg">
+
+    <ScrollView>
+        <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+
+            <Label Text="Name" TextColor="WhiteSmoke"
+               FontSize="Large"
+                HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"/>
+            <Entry Text="{Binding LatestUser.Name}" TextColor="WhiteSmoke" FontSize="Medium" />
+            <Label Text="Surname" TextColor="WhiteSmoke"
+               FontSize="Large"
+                HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+            <Entry Text="{Binding LatestUser.Surname}" TextColor="WhiteSmoke" FontSize="Medium" />
+            <Label Text="Email Address" TextColor="WhiteSmoke"
+               FontSize="Large"
+                HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+            <Entry Text="{Binding LatestUser.Email}" TextColor="WhiteSmoke" FontSize="Medium" />
+            <Label Text="Password" TextColor="WhiteSmoke"
+               FontSize="Large"
+                HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+            <Entry Text="{Binding LatestUser.Password}" TextColor="WhiteSmoke" FontSize="Medium"  />
+            <Label Text="Confirm Password" TextColor="WhiteSmoke"
+               FontSize="Large"
+                HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+            <Entry Text="{Binding LatestUser.ConfirmPassword}" TextColor="WhiteSmoke" FontSize="Medium" />
+
+            <Button Text="Order Water" Command="{Binding Order}"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
